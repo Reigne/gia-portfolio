@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gray-50 font-poppins px-[180px] py-8">
+    <div id="projects" className="min-h-screen bg-gray-50 font-poppins px-[180px] py-8">
       <div className="flex flex-col justify-center items-center">
         <p className="text-4xl font-bold text-purple-500">Projects</p>
         <p className="text-lg text-zinc-600">Here are some of my projects</p>

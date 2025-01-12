@@ -1,12 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Navbar from "../Navbar/Navbar";
 import { FaLinkedinIn } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import { FaLink } from "react-icons/fa";
 
 const Hero = () => {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
+      id="home"
       className="min-h-screen font-poppins bg-cover bg-center"
       style={{ backgroundImage: "url('/images/background.png')" }}
     >
@@ -25,7 +31,12 @@ const Hero = () => {
         </div>
       </div> */}
 
-      <div className="flex justify-between items-center h-screen px-[180px]">
+      <motion.div
+        className="flex justify-between items-center h-screen px-[180px]"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         {/* image of gia */}
         <div className="flex justify-start items-center w-2/5">
           <div>
@@ -45,7 +56,10 @@ const Hero = () => {
 
           {/* button hire me */}
           <div className="flex items-center gap-4 mt-6 ">
-            <button className="bg-gradient-to-r from-purple-400 to-violet-500 text-transparent font-semibold text-lg px-10 py-3 rounded-full text-white transform transition-transform duration-400 hover:scale-110 shadow-lg shadow-violet-500/50">
+            <button
+              onClick={() => scrollToSection("workflow")}
+              className="bg-gradient-to-r from-purple-400 to-violet-500 text-transparent font-semibold text-lg px-10 py-3 rounded-full text-white transform transition-transform duration-400 hover:scale-110 shadow-lg shadow-violet-500/50"
+            >
               Contact Me
             </button>
 
@@ -60,7 +74,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
