@@ -1,5 +1,8 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import { FaLinkedinIn } from "react-icons/fa";
+import { ImLinkedin } from "react-icons/im";
+import { FaLink } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -46,8 +49,14 @@ const Hero = () => {
               Contact Me
             </button>
 
-            <button className="bg-transparent border border-white text-white font-semibold text-lg px-10 py-3 rounded-full transform transition-transform duration-300 hover:scale-110 shadow-md hover:shadow-white/30">
-              Schedule a Meeting
+            <button className="bg-transparent  border-white text-white font-semibold text-sm px-10 py-3 rounded-full transform transition-transform duration-300 hover:scale-110 ">
+              <div className="flex items-center gap-4">
+                <span>
+                  <FaLink />
+                </span>
+
+                <p> linkedin.com/ph/geferlene-aznar/</p>
+              </div>
             </button>
           </div>
         </div>

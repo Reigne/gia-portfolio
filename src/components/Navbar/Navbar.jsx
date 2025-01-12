@@ -15,7 +15,7 @@ const Navbar = () => {
           <li className="cursor-pointer hover:text-purple-400">About</li>
           <li className="cursor-pointer hover:text-purple-400">Workflow</li>
           <li className="cursor-pointer hover:text-purple-400">Projects</li>
-          <li className="cursor-pointer border border-transparent bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-border py-2 px-6 rounded-full">
+          <li className="cursor-pointer border border-transparent bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-border py-2 px-6 rounded-full shadow-lg shadow-violet-500/50">
             Contact Me
           </li>
         </ul>
