@@ -10,7 +10,7 @@ const Projects = () => {
 
       {/* 3 reels size video placeholder container */}
       <div className="mt-12 flex flex-col gap-2">
-        <p className="text-2xl font-bold text-purple-500">SHORT-FORM</p>
+        <p className="text-lg text-purple-500 border border-purple-400 px-6  rounded-full w-fit">SHORT-FORM</p>
         <div className="flex justify-between items-center gap-2">
           <div className="w-[1136px] h-[640px] bg-zinc-200 rounded"></div>
           <div className="w-[1136px] h-[640px] bg-zinc-200 rounded"></div>
@@ -24,7 +24,7 @@ const Projects = () => {
       </div>
 
       <div className="mt-12 flex flex-col gap-2">
-        <p className="text-2xl font-bold text-purple-500">LONG-FORM</p>
+        <p className="text-lg text-purple-500 border border-purple-400 px-6  rounded-full w-fit">LONG-FORM</p>
         <div className="flex justify-between items-center gap-2">
           <div className="w-1/2 h-[470px] bg-zinc-200 rounded"></div>
           <div className="w-1/2 h-[470px] bg-zinc-200 rounded"></div>
@@ -36,7 +36,7 @@ const Projects = () => {
       </div>
 
       <div className="mt-12 flex flex-col gap-2">
-        <p className="text-2xl font-bold text-purple-500">ADS</p>
+        <p className="text-lg text-purple-500 border border-purple-400 px-6  rounded-full w-fit">ADS</p>
         <div className="flex justify-between items-center gap-2">
           <div className="w-[380px] h-[380px] bg-zinc-200 rounded"></div>
           <div className="w-[380px] h-[380px] bg-zinc-200 rounded"></div>
