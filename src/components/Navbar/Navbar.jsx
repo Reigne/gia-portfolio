@@ -23,10 +23,13 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center py-6 px-[180px] text-white font-poppins">
-      <div className="flex items-center gap-2 cursor-pointer">
+      <a
+        className="flex items-center gap-2 cursor-pointer"
+        onClick={() => handleNavigation("home")}
+      >
         <IoHeart size={24} />
         <p className="text-4xl font-bold">Gia</p>
-      </div>
+      </a>
 
       <div>
         <ul className="flex items-center gap-14">
@@ -49,8 +52,9 @@ const Navbar = () => {
           >
             Projects
           </li>
+          <li className="cursor-pointer hover:text-purple-400">Testimonials</li>
           <Link to="/contact">
-            <li className="cursor-pointer border border-transparent bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-border py-2 px-6 rounded-full shadow-lg shadow-violet-500/50">
+            <li className="cursor-pointer border border-transparent bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-border py-2 px-6 rounded-full shadow-lg shadow-violet-500/50 transform transition-transform duration-400 hover:scale-110">
               Contact Me
             </li>
           </Link>
