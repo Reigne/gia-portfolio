@@ -52,7 +52,12 @@ const Navbar = () => {
           >
             Projects
           </li>
-          <li className="cursor-pointer hover:text-purple-400">Testimonials</li>
+          <li
+            className="cursor-pointer hover:text-purple-400"
+            onClick={() => handleNavigation("testimonials")}
+          >
+            Testimonials
+          </li>
           <Link to="/contact">
             <li className="cursor-pointer border border-transparent bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-border py-2 px-6 rounded-full shadow-lg shadow-violet-500/50 transform transition-transform duration-400 hover:scale-110">
               Contact Me
