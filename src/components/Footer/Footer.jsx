@@ -15,7 +15,7 @@ const Footer = () => {
             <IoHeart color="white" size={24} />
             <p className="text-xl font-bold">Gia Portfolio</p>
           </div>
-          <p className="text-sm text-white/60 w-[400px]">
+          <p className="text-sm text-white/60 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
