@@ -1,0 +1,44 @@
+.showcase-container {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 180px;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.showcase-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .showcase-container {
+    padding: 8px 4px;
+    overflow: hidden;
+  }
+
+  .showcase-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+  }
+
+  .showcase-content > div {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
