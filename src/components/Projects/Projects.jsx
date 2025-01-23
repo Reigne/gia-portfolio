@@ -41,8 +41,8 @@ const Projects = () => {
               src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
               controls
               // poster="/images/Gia.png"
-              onMouseOver={(e) => e.target.play()}
-              onMouseOut={(e) => e.target.pause()}
+              // onMouseOver={(e) => e.target.play()}
+              // onMouseOut={(e) => e.target.pause()}
               className="w-full h-full object"
             ></video>
           </motion.div>
@@ -56,8 +56,7 @@ const Projects = () => {
               src="/videos/short-form/The Truth About Interest Rates Lenders Won't Tell.mp4"
               controls
               // poster="/images/Gia.png"
-              onMouseOver={(e) => e.target.play()}
-              onMouseOut={(e) => e.target.pause()}
+
               className="w-full h-full object"
             ></video>
           </motion.div>
@@ -68,11 +67,10 @@ const Projects = () => {
             className="relative w-[600px]  bg-zinc-200 rounded"
           >
             <video
-              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              src="/videos/short-form/Why House Hacking Is the Smartest Way to Start.mp4"
               controls
               // poster="/images/Gia.png"
-              onMouseOver={(e) => e.target.play()}
-              onMouseOut={(e) => e.target.pause()}
+
               className="w-full h-full object"
             ></video>
           </motion.div>
@@ -83,11 +81,10 @@ const Projects = () => {
             className="relative w-[600px]  bg-zinc-200 rounded"
           >
             <video
-              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              src="/videos/short-form/Before You Sign That Loan, Watch This!.mp4"
               controls
               // poster="/images/Gia.png"
-              onMouseOver={(e) => e.target.play()}
-              onMouseOut={(e) => e.target.pause()}
+
               className="w-full h-full object"
             ></video>
           </motion.div>
@@ -97,20 +94,59 @@ const Projects = () => {
             initial={{ y: 150, opacity: 0 }}
             animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              controls
+              // poster="/images/Gia.png"
+              // onMouseOver={(e) => e.target.play()}
+              // onMouseOut={(e) => e.target.pause()}
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
           <motion.div
-            initial={{ y: 200, opacity: 0 }}
+            initial={{ y: 150, opacity: 0 }}
             animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 1.2 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/The Truth About Interest Rates Lenders Won't Tell.mp4"
+              controls
+              // poster="/images/Gia.png"
+
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
           <motion.div
-            initial={{ y: 250, opacity: 0 }}
+            initial={{ y: 150, opacity: 0 }}
             animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 1.4 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Why House Hacking Is the Smartest Way to Start.mp4"
+              controls
+              // poster="/images/Gia.png"
+
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
+          <motion.div
+            initial={{ y: 150, opacity: 0 }}
+            animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Before You Sign That Loan, Watch This!.mp4"
+              controls
+              // poster="/images/Gia.png"
+
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
         </div>
       </motion.div>
 
@@ -180,8 +216,7 @@ const Projects = () => {
               src="/videos/ads/Option One Solar Ads.mp4"
               controls
               // poster="/images/Gia.png"
-              onMouseOver={(e) => e.target.play()}
-              onMouseOut={(e) => e.target.pause()}
+
               className="w-full h-full object-cover"
             ></video>
           </motion.div>
@@ -199,8 +234,6 @@ const Projects = () => {
             <video
               src="/videos/ads/Option One Solar Ads.mp4"
               controls
-              onMouseOver={(e) => e.target.play()}
-              onMouseOut={(e) => e.target.pause()}
               className="w-full h-full object-cover"
             ></video>
           </motion.div>
@@ -231,23 +264,48 @@ const Projects = () => {
         </div>
         <div className="flex justify-between items-center gap-2">
           <motion.div
-            initial={{ y: 250, opacity: 0 }}
-            animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 1.4 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            initial={{ y: 150, opacity: 0 }}
+            animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              controls
+              // poster="/images/Gia.png"
+              // onMouseOver={(e) => e.target.play()}
+              // onMouseOut={(e) => e.target.pause()}
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
           <motion.div
-            initial={{ y: 300, opacity: 0 }}
-            animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 1.6 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            initial={{ y: 150, opacity: 0 }}
+            animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/The Truth About Interest Rates Lenders Won't Tell.mp4"
+              controls
+              // poster="/images/Gia.png"
+
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
           <motion.div
-            initial={{ y: 350, opacity: 0 }}
-            animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 1.8 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            initial={{ y: 150, opacity: 0 }}
+            animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              controls
+              // poster="/images/Gia.png"
+
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
         </div>
       </motion.div>
     </div>
