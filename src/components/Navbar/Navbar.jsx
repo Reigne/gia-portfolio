@@ -1,8 +1,9 @@
-import React from "react";
-import { IoHeart } from "react-icons/io5";
+import React, { useState } from "react";
+import { IoHeart, IoMenu, IoClose } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -21,8 +22,13 @@ const Navbar = () => {
     }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    document.body.style.overflow = isMenuOpen ? "auto" : "hidden";
+  };
+
   return (
-    <div className="flex justify-between items-center py-6 px-[180px] text-white font-poppins">
+    <div className="flex justify-between items-center gap-8 py-6 px-6 md:px-[20px] lg:px-[40px] xl:px-[180px] text-white font-poppins overflow-hidden">
       <a
         className="flex items-center gap-2 cursor-pointer"
         onClick={() => handleNavigation("home")}
@@ -31,30 +37,60 @@ const Navbar = () => {
         <p className="text-4xl font-bold">Gia</p>
       </a>
 
-      <div>
-        <ul className="flex items-center gap-14">
+      <div className="lg:hidden">
+        <button onClick={toggleMenu}>
+          {isMenuOpen ? <IoClose size={24} /> : <IoMenu size={24} />}
+        </button>
+      </div>
+
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 lg:static lg:bg-transparent lg:flex lg:flex-row lg:items-center lg:gap-14 lg:translate-x-0`}
+      >
+        {isMenuOpen && (
+          <button
+            className="absolute top-6 right-6 text-white"
+            onClick={toggleMenu}
+          >
+            <IoClose size={24} />
+          </button>
+        )}
+        <ul className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <li
             className="cursor-pointer hover:text-purple-400"
-            onClick={() => handleNavigation("home")}
+            onClick={() => {
+              handleNavigation("home");
+              setIsMenuOpen(false);
+            }}
           >
             Home
           </li>
           <li className="cursor-pointer hover:text-purple-400">About</li>
           <li
             className="cursor-pointer hover:text-purple-400"
-            onClick={() => handleNavigation("workflow")}
+            onClick={() => {
+              handleNavigation("workflow");
+              setIsMenuOpen(false);
+            }}
           >
             Workflow
           </li>
           <li
             className="cursor-pointer hover:text-purple-400"
-            onClick={() => handleNavigation("projects")}
+            onClick={() => {
+              handleNavigation("projects");
+              setIsMenuOpen(false);
+            }}
           >
             Projects
           </li>
           <li
             className="cursor-pointer hover:text-purple-400"
-            onClick={() => handleNavigation("testimonials")}
+            onClick={() => {
+              handleNavigation("testimonials");
+              setIsMenuOpen(false);
+            }}
           >
             Testimonials
           </li>
