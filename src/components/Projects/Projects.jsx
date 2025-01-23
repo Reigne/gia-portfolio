@@ -35,20 +35,62 @@ const Projects = () => {
             initial={{ y: 150, opacity: 0 }}
             animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              controls
+              // poster="/images/Gia.png"
+              onMouseOver={(e) => e.target.play()}
+              onMouseOut={(e) => e.target.pause()}
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
           <motion.div
-            initial={{ y: 200, opacity: 0 }}
+            initial={{ y: 150, opacity: 0 }}
             animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 1.2 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/The Truth About Interest Rates Lenders Won't Tell.mp4"
+              controls
+              // poster="/images/Gia.png"
+              onMouseOver={(e) => e.target.play()}
+              onMouseOut={(e) => e.target.pause()}
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
           <motion.div
-            initial={{ y: 250, opacity: 0 }}
+            initial={{ y: 150, opacity: 0 }}
             animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 1.4 }}
-            className="w-[1136px] h-[640px] bg-zinc-200 rounded"
-          ></motion.div>
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              controls
+              // poster="/images/Gia.png"
+              onMouseOver={(e) => e.target.play()}
+              onMouseOut={(e) => e.target.pause()}
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
+          <motion.div
+            initial={{ y: 150, opacity: 0 }}
+            animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="relative w-[600px]  bg-zinc-200 rounded"
+          >
+            <video
+              src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
+              controls
+              // poster="/images/Gia.png"
+              onMouseOver={(e) => e.target.play()}
+              onMouseOut={(e) => e.target.pause()}
+              className="w-full h-full object"
+            ></video>
+          </motion.div>
         </div>
         <div className="flex justify-between items-center gap-2">
           <motion.div
