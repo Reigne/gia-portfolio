@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fixed-width {
+  width: 1900px;
+  margin: 0 auto;
+  min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
+}

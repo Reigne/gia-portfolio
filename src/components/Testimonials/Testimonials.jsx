@@ -50,6 +50,15 @@ const Testimonials = () => {
     slidesToScroll: 1,
     responsive: [
       {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
@@ -63,6 +72,14 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -70,62 +87,81 @@ const Testimonials = () => {
 
   return (
     <div
-      id="testimonials"
-      className="flex flex-col justify-center items-center px-[180px] py-8 min-h-screen font-poppins bg-cover bg-center"
+      className="w-full flex justify-center bg-cover bg-center"
       style={{ backgroundImage: "url('/images/background.png')" }}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 1 }}
-        className="mb-24"
+      <div
+        id="testimonials"
+        className="w-full max-w-[1920px] h-[1000px] flex flex-col justify-center items-center px-4 md:px-12 lg:px-[180px] py-8 font-poppins"
       >
-        <div className="flex flex-col justify-center items-center gap-4">
-          <p className="text-lg text-purple-500  border border-purple-400 px-4 rounded-full">
-            Testimonials
-          </p>
-          <span className="text-5xl font-bold text-white w-[500px] text-center">
-            What my clients say about me.
-          </span>
-        </div>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1 }}
+          className="mb-12 md:mb-24"
+        >
+          <div className="flex flex-col justify-center items-center gap-4">
+            <p className="text-sm md:text-lg text-purple-500 border border-purple-400 px-2 md:px-4 rounded-full">
+              Testimonials
+            </p>
+            <span className="text-3xl md:text-5xl font-bold text-white w-full md:w-[500px] text-center">
+              What my clients say about me.
+            </span>
+          </div>
+        </motion.div>
 
-      <div ref={ref} className="w-full">
-        <Slider {...settings}>
-          {comments.map((comment, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 100 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1, delay: index * 0.1 }}
-              className="px-4"
-            >
-              <div className="w-[480px] h-[300px] bg-purple-400/10 rounded-2xl mx-auto border-2 border-purple-300/10">
-                <div className="flex flex-col gap-4 p-6 h-full">
-                  <div className="flex gap-2">
-                    <TiStarFullOutline className="text-purple-500" size={20} />
-                    <TiStarFullOutline className="text-purple-500" size={20} />
-                    <TiStarFullOutline className="text-purple-500" size={20} />
-                    <TiStarFullOutline className="text-purple-500" size={20} />
-                    <TiStarFullOutline className="text-purple-500" size={20} />
-                  </div>
-                  <div className="flex flex-col flex-grow">
-                    <p className="text-white text-">{comment.text}</p>
-                  </div>
-                  <div className="flex justify-between items-center gap-4 mt-auto">
-                    <p className="text-white font-bold">{comment.author}</p>
-                    <img
-                      src={comment.avatar}
-                      alt="Avatar"
-                      width={35}
-                      className="rounded-full"
-                    />
+        <div ref={ref} className="w-full">
+          <Slider {...settings}>
+            {comments.map((comment, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 100 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 1, delay: index * 0.1 }}
+                className="px-2 md:px-4"
+              >
+                <div className="w-full bg-purple-400/10 rounded-2xl mx-auto border-2 border-purple-300/10">
+                  <div className="flex flex-col gap-4 p-4 md:p-6 h-full">
+                    <div className="flex gap-2">
+                      <TiStarFullOutline
+                        className="text-purple-500"
+                        size={20}
+                      />
+                      <TiStarFullOutline
+                        className="text-purple-500"
+                        size={20}
+                      />
+                      <TiStarFullOutline
+                        className="text-purple-500"
+                        size={20}
+                      />
+                      <TiStarFullOutline
+                        className="text-purple-500"
+                        size={20}
+                      />
+                      <TiStarFullOutline
+                        className="text-purple-500"
+                        size={20}
+                      />
+                    </div>
+                    <div className="flex flex-col flex-grow">
+                      <p className="text-white">{comment.text}</p>
+                    </div>
+                    <div className="flex justify-between items-center gap-4 mt-auto">
+                      <p className="text-white font-bold">{comment.author}</p>
+                      <img
+                        src={comment.avatar}
+                        alt="Avatar"
+                        width={35}
+                        className="rounded-full"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </Slider>
+              </motion.div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
