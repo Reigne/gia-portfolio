@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoHeart, IoMenu, IoClose } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -6,6 +6,12 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isMenuOpen) {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
 
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
@@ -16,9 +22,11 @@ const Navbar = () => {
       navigate(`/#${id}`);
       setTimeout(() => {
         scrollToSection(id);
+        setIsMenuOpen(false);
       }, 100);
     } else {
       scrollToSection(id);
+      setIsMenuOpen(false);
     }
   };
 
@@ -28,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex justify-center md:absolute top-0 left-0 w-ful">
+    <div className="w-full flex justify-center absolute top-0 left-0 bg-transparent md:bg-transparent">
       <div className="w-full max-w-[1900px] flex justify-between items-center gap-8 py-6 px-6 md:px-[20px] lg:px-[40px] xl:px-[180px] text-white font-poppins overflow-hidden ">
         <a
           className="flex items-center gap-2 cursor-pointer"
