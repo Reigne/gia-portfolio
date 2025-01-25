@@ -5,11 +5,13 @@ import { BrowserRouter } from "react-router-dom";
 
 import "./index.css";
 import App from "./App.jsx";
+import { Toaster } from "sonner";
 
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <NextUIProvider>
+      <Toaster />
       <App />
     </NextUIProvider>
   </BrowserRouter>
