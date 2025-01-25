@@ -48,7 +48,7 @@ const Contact = () => {
 
           // thanks
           toast.success(
-            "Thank you for your message. I will get back to you soon."
+            "Thank you for your message. I will get back to you as soon as possible."
           );
         },
         (error) => {
@@ -118,7 +118,7 @@ const Contact = () => {
             size="lg"
             isLoading={isLoading}
           >
-           Send Message
+            Send Message
           </Button>
         </form>
       </motion.div>
