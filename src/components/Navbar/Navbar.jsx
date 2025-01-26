@@ -66,7 +66,7 @@ const Navbar = () => {
             </button>
           )}
           <ul className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
-            <li
+            {/* <li
               className="cursor-pointer hover:text-purple-400"
               onClick={() => {
                 handleNavigation("home");
@@ -74,8 +74,16 @@ const Navbar = () => {
               }}
             >
               Home
+            </li> */}
+            <li
+              className="cursor-pointer hover:text-purple-400"
+              onClick={() => {
+                handleNavigation("about");
+                setIsMenuOpen(false);
+              }}
+            >
+              About
             </li>
-            <li className="cursor-pointer hover:text-purple-400">About</li>
             <li
               className="cursor-pointer hover:text-purple-400"
               onClick={() => {

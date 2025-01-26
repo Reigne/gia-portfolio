@@ -35,7 +35,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -47,7 +47,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -59,7 +59,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0.4 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -71,7 +71,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0.6 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -84,7 +84,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0.8 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -96,7 +96,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 1 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -108,7 +108,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -120,7 +120,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 1.4 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -132,6 +132,7 @@ const Projects = () => {
           </div>
         </motion.div>
 
+        {/* long-form */}
         <motion.div
           ref={refLongForm}
           initial={{ y: 200, opacity: 0 }}
@@ -178,6 +179,7 @@ const Projects = () => {
           </div>
         </motion.div>
 
+        {/* ads */}
         <motion.div
           ref={refAds}
           initial={{ y: 250, opacity: 0 }}
@@ -188,11 +190,12 @@ const Projects = () => {
           <p className="bg-purple-500 text-white px-6 rounded-full w-fit">
             ADS
           </p>
+          
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <motion.div
               initial={{ y: 250, opacity: 0 }}
               animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.4 }}
+              transition={{ duration: 1.4, delay: 0 }}
               className="relative w-full aspect-square bg-zinc-200 rounded"
             >
               <div className="absolute top-0 left-0 p-2 w-full backdrop-filter backdrop-blur-sm">
@@ -209,7 +212,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 250, opacity: 0 }}
               animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.4 }}
+              transition={{ duration: 1.4, delay: 0.2 }}
               className="relative w-full aspect-square bg-zinc-200 rounded"
             >
               <div className="absolute top-0 left-0 p-2 w-full backdrop-filter backdrop-blur-sm">
@@ -226,7 +229,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 250, opacity: 0 }}
               animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.4 }}
+              transition={{ duration: 1.4, delay: 0.4 }}
               className="relative w-full aspect-square bg-zinc-200 rounded"
             >
               <video
@@ -238,7 +241,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 250, opacity: 0 }}
               animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.4 }}
+              transition={{ duration: 1.4, delay: 0.6 }}
               className="relative w-full aspect-square bg-zinc-200 rounded"
             >
               <video
@@ -252,8 +255,8 @@ const Projects = () => {
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4">
             <motion.div
               initial={{ y: 150, opacity: 0 }}
-              animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
+              transition={{ duration: 1, delay: 0.8 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -264,8 +267,8 @@ const Projects = () => {
             </motion.div>
             <motion.div
               initial={{ y: 150, opacity: 0 }}
-              animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
+              transition={{ duration: 1, delay: 1 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -276,8 +279,8 @@ const Projects = () => {
             </motion.div>
             <motion.div
               initial={{ y: 150, opacity: 0 }}
-              animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
+              transition={{ duration: 1, delay: 1.2 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -288,8 +291,8 @@ const Projects = () => {
             </motion.div>
             <motion.div
               initial={{ y: 150, opacity: 0 }}
-              animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
+              transition={{ duration: 1, delay: 1.4}}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
@@ -300,8 +303,8 @@ const Projects = () => {
             </motion.div>
             <motion.div
               initial={{ y: 150, opacity: 0 }}
-              animate={isInViewShortForm ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1 }}
+              animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
+              transition={{ duration: 1, delay: 1.6 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
