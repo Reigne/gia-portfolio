@@ -63,10 +63,10 @@ const Contact = () => {
   return (
     <div
       className="w-full flex justify-center font-poppins bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/background.png')" }}
+      style={{ backgroundImage: "url('/images/background-4.png')" }}
     >
       <motion.div
-        className="flex flex-col items-center justify-center h-[1000px] text-white px-6 md:px-[20px] lg:px-[40px] xl:px-[180px]"
+        className="flex flex-col items-center justify-center h-[58rem] text-white px-6 md:px-[20px] lg:px-[40px] xl:px-[180px]"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}

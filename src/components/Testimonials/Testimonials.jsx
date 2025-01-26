@@ -88,11 +88,11 @@ const Testimonials = () => {
   return (
     <div
       className="w-full flex justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/background.png')" }}
+      style={{ backgroundImage: "url('/images/background-3.png')" }}
     >
       <div
         id="testimonials"
-        className="w-full max-w-[1920px] h-[1000px] flex flex-col justify-center items-center px-4 md:px-12 lg:px-[180px] py-8 font-poppins"
+        className="w-full max-w-[1920px] h-[58rem] flex flex-col justify-center items-center px-4 md:px-12 lg:px-[180px] py-8 font-poppins"
       >
         <motion.div
           initial={{ opacity: 0, y: 100 }}

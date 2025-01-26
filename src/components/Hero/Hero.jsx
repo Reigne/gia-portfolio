@@ -12,13 +12,13 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full flex justify-center bg-cover bg-center "
-      style={{ backgroundImage: "url('/images/background-2.png')" }}
+      className="w-full flex justify-center bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/background-4.png')" }}
       id="home"
     >
       <div
         id="home"
-        className="w-full max-w-[1900px] h-[1000px]  font-poppins overflow-hidden"
+        className="w-full max-w-[1900px] h-[58rem]  font-poppins overflow-hidden"
       >
         {/* <div className="md:absolute top-0 left-0 w-full">
         </div> */}

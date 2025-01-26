@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div
       className="w-full flex justify-center "
-      style={{ backgroundImage: "url('/images/background-2.png')" }}
+      style={{ backgroundImage: "url('/images/background-4.png')" }}
     >
       <div className="w-full max-w-[1920px] flex flex-col">
         <div className="flex flex-col lg:flex-row justify-between gap-10 py-6 px-6 md:px-[20px] lg:px-[40px] xl:px-[180px] text-white border-t border-purple-200 font-poppins text-center lg:text-left">
