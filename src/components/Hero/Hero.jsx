@@ -18,7 +18,7 @@ const Hero = () => {
     >
       <div
         id="about"
-        className="w-full max-w-[1900px] h-[58rem]  font-poppins overflow-hidden"
+        className="w-full max-w-[1900px] h-[60rem]  font-poppins overflow-hidden"
       >
         {/* <div className="md:absolute top-0 left-0 w-full">
         </div> */}
