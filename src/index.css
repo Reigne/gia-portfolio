@@ -9,3 +9,26 @@
   margin: 0 auto;
   min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+  display: flex;
+  width: 200%; /* Ensure the container is twice the width to loop seamlessly */
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.paused {
+  animation-play-state: paused !important;
+}

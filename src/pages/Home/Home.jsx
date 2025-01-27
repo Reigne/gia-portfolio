@@ -5,6 +5,7 @@ import Projects from "../../components/Projects/Projects";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import ClientLogos from "../../components/ClientLogos/ClientLogos";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       <Workflow />
       <Projects />
+      <ClientLogos />
       <Testimonials />
       {/* <Footer /> */}
     </div>
