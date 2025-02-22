@@ -40,7 +40,13 @@ const Footer = () => {
               className="text-sm text-white/60 cursor-pointer"
               onClick={() => navigate("/contact")}
             >
-              Contact
+              Contact Me
+            </p>
+            <p
+              className="text-sm text-white/60 cursor-pointer"
+              onClick={() => navigate("/404")}
+            >
+              404
             </p>
           </div>
 
