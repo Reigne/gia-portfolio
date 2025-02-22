@@ -31,8 +31,8 @@ const Workflow = () => {
             <div className="w-[426px] md:w-[640px] lg:w-[854px] xl:w-[1280px] h-[240px] md:h-[360px] lg:h-[480px] xl:h-[720px] bg-zinc-200 rounded overflow-hidden">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/xAWDqdpOlu8?list=RDxAWDqdpOlu8"
-                title="Billie Eilish – WILDFLOWER (Live Performance from Amazon Music’s Songline)"
+                src="https://www.youtube.com/embed/jdRKfbjGmW4"
+                title="Ground Mount Panel Installation || Option One Solar"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
