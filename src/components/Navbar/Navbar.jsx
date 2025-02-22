@@ -39,10 +39,12 @@ const Navbar = () => {
     <div className="w-full flex justify-center absolute top-0 left-0 bg-transparent md:bg-transparent">
       <div className="w-full max-w-[1900px] flex justify-between items-center gap-8 py-6 px-6 md:px-[20px] lg:px-[40px] xl:px-[180px] text-white font-poppins overflow-hidden ">
         <a
-          className="flex items-center gap-2 cursor-pointer"
+          className="flex items-center gap-3 cursor-pointer"
           onClick={() => handleNavigation("home")}
         >
-          <IoHeart size={24} />
+          {/* <IoHeart size={24} /> */}
+
+          <img src="/logo.png" alt="Gia" className="w-6 h-6" />
           <p className="text-4xl font-bold">Gia</p>
         </a>
 
