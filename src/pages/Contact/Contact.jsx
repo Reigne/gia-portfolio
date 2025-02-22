@@ -1,13 +1,19 @@
-import React from 'react'
+import React from "react";
 import ContactMe from "../../components/ContactMe/ContactMe";
+import Metadata from "../../components/Layout/Metadata";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
     <>
-      <ContactMe />
-      
-    </>
-  )
-}
+      <Metadata title="Contact Me" />
 
-export default Contact
+      <Navbar />
+      <ContactMe />
+      <Footer />
+    </>
+  );
+};
+
+export default Contact;

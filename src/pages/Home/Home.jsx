@@ -6,18 +6,20 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import ClientLogos from "../../components/ClientLogos/ClientLogos";
+import Metadata from "../../components/Layout/Metadata";
 
 const Home = () => {
   return (
-    <div>
-      {/* <Navbar /> */}
+    <>
+      <Metadata title="Home" />
+      <Navbar />
       <Hero />
       <Workflow />
-      <Projects />
       <ClientLogos />
+      <Projects />
       <Testimonials />
-      {/* <Footer /> */}
-    </div>
+      <Footer />
+    </>
   );
 };
 
