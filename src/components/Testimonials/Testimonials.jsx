@@ -87,7 +87,7 @@ const Testimonials = () => {
 
   return (
     <div
-      className="w-full flex justify-center bg-cover bg-center"
+      className="w-full flex justify-center bg-cover bg-center "
       style={{ backgroundImage: "url('/images/background-3.png')" }}
     >
       <div
