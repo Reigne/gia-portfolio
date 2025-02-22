@@ -152,8 +152,8 @@ const Projects = () => {
             >
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/xAWDqdpOlu8?list=RDxAWDqdpOlu8"
-                title="Billie Eilish – WILDFLOWER (Live Performance from Amazon Music’s Songline)"
+                src="https://www.youtube.com/embed/jdRKfbjGmW4"
+                title="Ground Mount Panel Installation || Option One Solar"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
@@ -168,8 +168,8 @@ const Projects = () => {
             >
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/xAWDqdpOlu8?list=RDxAWDqdpOlu8"
-                title="Billie Eilish – WILDFLOWER (Live Performance from Amazon Music’s Songline)"
+                src="https://www.youtube.com/embed/jdRKfbjGmW4"
+                title="Ground Mount Panel Installation || Option One Solar"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
@@ -190,7 +190,7 @@ const Projects = () => {
           <p className="bg-purple-500 text-white px-6 rounded-full w-fit">
             ADS
           </p>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <motion.div
               initial={{ y: 250, opacity: 0 }}
@@ -292,7 +292,7 @@ const Projects = () => {
             <motion.div
               initial={{ y: 150, opacity: 0 }}
               animate={isInViewAds ? { y: 0, opacity: 1 } : {}}
-              transition={{ duration: 1, delay: 1.4}}
+              transition={{ duration: 1, delay: 1.4 }}
               className="relative w-full bg-zinc-200 rounded"
             >
               <video
