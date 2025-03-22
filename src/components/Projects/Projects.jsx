@@ -38,11 +38,23 @@ const Projects = () => {
               transition={{ duration: 1, delay: 0 }}
               className="relative w-full bg-zinc-200 rounded"
             >
-              <video
+              {/* <video
                 src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
                 controls
                 className="w-full h-full object-cover"
-              ></video>
+              ></video> */}
+
+              <iframe
+                className="rounded-lg"
+                width="374"
+                height="665"
+                src="https://www.youtube.com/embed/m1h0Le6JjdQ"
+                title="The Story of Repair.sg"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </motion.div>
             <motion.div
               initial={{ y: 150, opacity: 0 }}
@@ -50,11 +62,23 @@ const Projects = () => {
               transition={{ duration: 1, delay: 0.2 }}
               className="relative w-full bg-zinc-200 rounded"
             >
-              <video
+              {/* <video
                 src="/videos/short-form/The Truth About Interest Rates Lenders Won't Tell.mp4"
                 controls
                 className="w-full h-full object-cover"
-              ></video>
+              ></video> */}
+
+              <iframe
+                className="rounded-lg"
+                width="374"
+                height="665"
+                src="https://www.youtube.com/embed/R8ER9BfbnJc"
+                title="The Story of Repair.sg"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </motion.div>
             <motion.div
               initial={{ y: 150, opacity: 0 }}
@@ -62,11 +86,17 @@ const Projects = () => {
               transition={{ duration: 1, delay: 0.4 }}
               className="relative w-full bg-zinc-200 rounded"
             >
-              <video
-                src="/videos/short-form/Why House Hacking Is the Smartest Way to Start.mp4"
-                controls
-                className="w-full h-full object-cover"
-              ></video>
+              <iframe
+                className="rounded-lg"
+                width="374"
+                height="665"
+                src="https://www.youtube.com/embed/3U6OHt-CGHo"
+                title="The Story of Repair.sg"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </motion.div>
             <motion.div
               initial={{ y: 150, opacity: 0 }}
@@ -74,11 +104,17 @@ const Projects = () => {
               transition={{ duration: 1, delay: 0.6 }}
               className="relative w-full bg-zinc-200 rounded"
             >
-              <video
-                src="/videos/short-form/Before You Sign That Loan, Watch This!.mp4"
-                controls
-                className="w-full h-full object-cover"
-              ></video>
+              <iframe
+                className="rounded-lg"
+                width="374"
+                height="665"
+                src="https://www.youtube.com/embed/Jp6MAD3YD7I"
+                title="Every Entrepreneur Should Know This!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </motion.div>
 
             <motion.div
@@ -90,7 +126,7 @@ const Projects = () => {
               <video
                 src="/videos/short-form/Why house hacking needs a long-term plan.mp4"
                 controls
-                className="w-full h-full object-cover"
+                className="rounded-lg w-full h-full object-cover"
               ></video>
             </motion.div>
             <motion.div
@@ -102,7 +138,7 @@ const Projects = () => {
               <video
                 src="/videos/short-form/The Truth About Interest Rates Lenders Won't Tell.mp4"
                 controls
-                className="w-full h-full object-cover"
+                className="rounded-lg w-full h-full object-cover"
               ></video>
             </motion.div>
             <motion.div
@@ -114,7 +150,7 @@ const Projects = () => {
               <video
                 src="/videos/short-form/Why House Hacking Is the Smartest Way to Start.mp4"
                 controls
-                className="w-full h-full object-cover"
+                className="rounded-lg w-full h-full object-cover"
               ></video>
             </motion.div>
             <motion.div
@@ -126,7 +162,7 @@ const Projects = () => {
               <video
                 src="/videos/short-form/Before You Sign That Loan, Watch This!.mp4"
                 controls
-                className="w-full h-full object-cover"
+                className="rounded-lg w-full h-full object-cover"
               ></video>
             </motion.div>
           </div>
@@ -148,11 +184,11 @@ const Projects = () => {
               initial={{ y: 200, opacity: 0 }}
               animate={isInViewLongForm ? { y: 0, opacity: 1 } : {}}
               transition={{ duration: 1.2 }}
-              className="w-full h-[430px] bg-zinc-200 rounded"
+              className="w-full h-[430px] bg-zinc-200 rounded-lg overflow-hidden"
             >
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/jdRKfbjGmW4"
+                src="https://www.youtube.com/embed/sm4f33tKyQ8"
                 title="Ground Mount Panel Installation || Option One Solar"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -164,7 +200,7 @@ const Projects = () => {
               initial={{ y: 250, opacity: 0 }}
               animate={isInViewLongForm ? { y: 0, opacity: 1 } : {}}
               transition={{ duration: 1.4 }}
-              className="w-full h-[430px] bg-zinc-200 rounded"
+              className="w-full h-[430px] bg-zinc-200 rounded-lg overflow-hidden"
             >
               <iframe
                 className="w-full h-full"
