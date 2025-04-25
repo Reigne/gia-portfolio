@@ -28,29 +28,29 @@ const Projects = () => {
     },
     {
       type: "iframe",
-      src: "https://www.youtube.com/embed/3U6OHt-CGHo",
-      title: "The Story of Repair.sg",
+      src: "https://www.youtube.com/embed/tULM8uFkKBM",
+      title: "Every Entrepreneur Should Know This!",
     },
+
     {
       type: "iframe",
       src: "https://www.youtube.com/embed/Jp6MAD3YD7I",
       title: "Every Entrepreneur Should Know This!",
     },
     {
-      type: "video",
-      src: "/videos/short-form/Why house hacking needs a long-term plan.mp4",
+      type: "iframe",
+      src: "https://www.youtube.com/embed/3U6OHt-CGHo",
+      title: "The Story of Repair.sg",
     },
     {
-      type: "video",
-      src: "/videos/short-form/The Truth About Interest Rates Lenders Won't Tell.mp4",
+      type: "iframe",
+      src: "https://www.youtube.com/embed/v46gC12y3ME",
+      title: "Every Entrepreneur Should Know This!",
     },
     {
-      type: "video",
-      src: "/videos/short-form/Why House Hacking Is the Smartest Way to Start.mp4",
-    },
-    {
-      type: "video",
-      src: "/videos/short-form/Before You Sign That Loan, Watch This!.mp4",
+      type: "iframe",
+      src: "https://www.youtube.com/embed/mmjqRN9jpT4",
+      title: "Every Entrepreneur Should Know This!",
     },
   ];
 
@@ -377,7 +377,9 @@ const Projects = () => {
                 transition={{ duration: 1.6, delay: index * 0.2 }}
                 className="relative w-full bg-zinc-200 rounded-lg overflow-hidden"
               >
-                <div className="pb-[177.78%] relative"> {/* 16:9 inverse for vertical orientation */}
+                <div className="pb-[177.78%] relative">
+                  {" "}
+                  {/* 16:9 inverse for vertical orientation */}
                   {video.hasTitle && (
                     <div className="absolute top-0 left-0 p-2 w-full backdrop-filter backdrop-blur-sm z-10">
                       <p className="text-white text-sm font-bold">
