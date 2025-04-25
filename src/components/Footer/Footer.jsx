@@ -23,8 +23,9 @@ const Footer = () => {
               <p className="text-xl font-bold">Gia Portfolio</p>
             </div>
             <p className="text-sm text-white/60 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              I create high-quality, engaging videos that showcase your brand
+              and vision. Explore my portfolio to see how I bring content to
+              life with creativity, precision, and a style that stands out!
             </p>
           </div>
 
@@ -54,17 +55,16 @@ const Footer = () => {
             <p className="font-bold cursor-pointer">Contact</p>
             <div className="flex items-center gap-2 cursor-pointer justify-center lg:justify-start">
               <MdEmail />
-              <p className="text-sm text-white">example@gmail.com</p>
+              <p className="text-sm text-white">geferlene@gmail.com</p>
             </div>
             <div className="flex items-center gap-2 cursor-pointer justify-center lg:justify-start">
               <MdPhone />
-              <p className="text-sm text-white">(+64) 922 1231 123</p>
+              <p className="text-sm text-white">(+63) 927 2156 953</p>
             </div>
             <div className="flex items-center gap-2 cursor-pointer justify-center lg:justify-start">
               <MdLocationPin />
               <p className="text-sm text-white">
-                1234 St. California, USA <br />
-                Cityvillem State, 1234
+                Cebu City, Philippines 
               </p>
             </div>
           </div>
@@ -90,8 +90,21 @@ const Footer = () => {
 
         <div className="flex flex-col lg:flex-row justify-between items-center py-4 px-4 sm:px-8 lg:px-[180px] font-poppins text-center lg:text-left">
           <div className="flex flex-col lg:flex-row flex-1 justify-between items-center gap-4 border-t border-purple-200/10 pt-4">
-            <p className="text-white">© Valour 2024. All Rights Reserved.</p>
-            <p className="text-white cursor-pointer">Designed by Reigne</p>
+            <p className="text-white">
+              &copy; {new Date().getFullYear()} Gia Portfolio. All rights
+              reserved.
+            </p>
+            <p className="text-white">
+              Designed by{" "}
+              <a
+                href="https://reigne-portfolio.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:text-purple-400 transition-colors underline"
+              >
+                Reigne
+              </a>
+            </p>
           </div>
         </div>
       </div>
