@@ -7,34 +7,29 @@ import "slick-carousel/slick/slick-theme.css";
 
 const comments = [
   {
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie lorem at massa. Facilisis in pretium nisl aliquet. Nulla volutpat aliquam velit. Donec sit amet nunc id libero suscipit.",
-    author: "John Doe",
-    avatar: "/images/Gia.png",
+    text: "I think it will be a perfect video. Good job! That's great, I like it! ",
+    author: "Max",
+    avatar: "",
   },
   {
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie lorem at massa. Facilisis in pretium nisl aliquet. Nulla volutpat aliquam velit. Donec sit amet nunc id libero suscipit.",
-    author: "Jane Doe",
-    avatar: "/images/Gia.png",
+    text: "I think you got the style and have good skills. You also understood feedback well.",
+    author: "Market Street Pod",
+    avatar: "",
   },
   {
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie lorem at massa. Facilisis in pretium nisl aliquet. Nulla volutpat aliquam velit. Donec sit amet nunc id libero suscipit.",
-    author: "Alice Smith",
-    avatar: "/images/Gia.png",
+    text: "I love it!! Good job Gia!!!! ",
+    author: "Joe",
+    avatar: "",
   },
   {
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie lorem at massa. Facilisis in pretium nisl aliquet. Nulla volutpat aliquam velit. Donec sit amet nunc id libero suscipit.",
-    author: "Bob Johnson",
-    avatar: "/images/Gia.png",
+    text: "Thank you for this. The video looks great, thanks.",
+    author: "Anders",
+    avatar: "",
   },
   {
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie lorem at massa. Facilisis in pretium nisl aliquet. Nulla volutpat aliquam velit. Donec sit amet nunc id libero suscipit.",
-    author: "Charlie Brown",
-    avatar: "/images/Gia.png",
-  },
-  {
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie lorem at massa. Facilisis in pretium nisl aliquet. Nulla volutpat aliquam velit. Donec sit amet nunc id libero suscipit.",
-    author: "David Wilson",
-    avatar: "/images/Gia.png",
+    text: "Really great video! I love how it turned out.",
+    author: "Rosebelle",
+    avatar: "",
   },
 ];
 
@@ -144,17 +139,25 @@ const Testimonials = () => {
                         size={20}
                       />
                     </div>
-                    <div className="flex flex-col flex-grow">
+                    <div className="flex flex-col flex-grow min-h-24">
                       <p className="text-white">{comment.text}</p>
                     </div>
                     <div className="flex justify-between items-center gap-4 mt-auto">
                       <p className="text-white font-bold">{comment.author}</p>
-                      <img
-                        src={comment.avatar}
-                        alt="Avatar"
-                        width={35}
-                        className="rounded-full"
-                      />
+                      {comment.avatar ? (
+                        <img
+                          src={comment.avatar}
+                          alt="Avatar"
+                          width={35}
+                          className="rounded-full"
+                        />
+                      ) : (
+                        <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center">
+                          <p className="text-white font-bold text-sm">
+                            {comment.author.charAt(0)}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
