@@ -7,6 +7,8 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import ClientLogos from "../../components/ClientLogos/ClientLogos";
 import Metadata from "../../components/Layout/Metadata";
+import AboutMe from "../../components/AboutMe/AboutMe";
+import Showcase from "../../components/Showcase/Showcase";
 
 const Home = () => {
   return (
@@ -14,8 +16,10 @@ const Home = () => {
       <Metadata title="Home" />
       <Navbar />
       <Hero />
-      <Workflow />
-      <ClientLogos />
+      {/* <Showcase /> */}
+      <AboutMe />
+      {/* <Workflow /> */}
+      {/* <ClientLogos /> */}
       <Projects />
       <Testimonials />
       <Footer />
