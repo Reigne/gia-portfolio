@@ -46,7 +46,7 @@ const ClientLogos = () => {
         {CLIENTS_LOGO.concat(CLIENTS_LOGO).map((client, index) => (
           <img
             key={index}
-            className="inline-block mr-20"
+            className="inline-block mr-20 filter grayscale hover:grayscale-0 transition-all duration-300"
             src={client.imageUrl}
             alt={client.name}
             width={150}
@@ -56,7 +56,7 @@ const ClientLogos = () => {
         {CLIENTS_LOGO.concat(CLIENTS_LOGO).map((client, index) => (
           <img
             key={index + CLIENTS_LOGO.length}
-            className="inline-block mr-20"
+            className="inline-block mr-20 filter grayscale hover:grayscale-0 transition-all duration-300"
             src={client.imageUrl}
             alt={client.name}
             width={150}
