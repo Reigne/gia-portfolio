@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="flex justify-center md:justify-start items-center p-4 md:p-0">
             <div className="max-w-full md:max-w-none">
               <img
-                src="/images/gia-2.jpeg"
+                src="/images/gia-3.jpg"
                 alt="Gia"
                 className="w-full h-auto md:w-[500px]  rounded-full"
               />
