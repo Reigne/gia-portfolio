@@ -115,7 +115,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <img className="w-2/5" src="/images/gia-picture.png" alt="Profile" />
+        <img className="w-2/5 rounded-full" src="/images/gia-6.png" alt="Profile" />
       </div>
     </section>
   );
